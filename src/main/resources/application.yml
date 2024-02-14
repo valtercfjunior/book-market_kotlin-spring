@@ -1,0 +1,14 @@
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: update
+  datasource:
+    url: jdbc:mysql://localhost:3306/db_bookmarket?createDatabaseIfNotExist=true
+    username: root
+    password: root
+  jackson:
+    default-property-inclusion: non_null
+
+jwt:
+  secret: 6f05555d-d8ff-408f-a6d1-f859ae119c31
+  expiration: 3600000
